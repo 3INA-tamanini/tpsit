@@ -23,6 +23,6 @@ public class Countdown extends Thread{
         s2.start();
         s2.join() ;   
         s3.start();
-        s3.join();
+        s3.join();    
     }
 }
