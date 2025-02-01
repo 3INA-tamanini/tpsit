@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 06:39:35 "/>
+        <attribute name="created" value="VXRlbnRlO0RFU0tUT1AtMU5GMkYwUTsyMDI0LTAzLTA3OyIxMDoxMzozOSAiOzI4NDg="/>
+        <attribute name="edited" value="VXRlbnRlO0RFU0tUT1AtMU5GMkYwUTsyMDI0LTAzLTA3OyIxMDozMjozMSAiOzI7Mjk1MA=="/>
+        <attribute name="edited" value="TWFkZSBJbiBIZWF2ZW47REVTS1RPUC04U0ZHVlJUOzIwMjQtMDMtMTA7IjA2OjM5OjM1ICI7MTszNjM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x1, x2, disc" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserire a, b e c&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="disc" expression="(b^2)-4*(a*c)"/>
+            <if expression="disc &gt; 0">
+                <then>
+                    <assign variable="x1" expression="(-b + sqrt(disc))/2*a"/>
+                    <assign variable="x2" expression="(-b - sqrt(disc))/2*a"/>
+                    <output expression="&quot;Le soluzioni sono: &quot; &amp; x1 &amp; &quot; e &quot; &amp; x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="disc == 0">
+                        <then>
+                            <assign variable="x1" expression="-b/2*a"/>
+                            <output expression="&quot;La soluzione &#232;: &quot; &amp; x1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Impossibile&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

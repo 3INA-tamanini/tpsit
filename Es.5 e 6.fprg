@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Utente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-09 10:10:50 "/>
+        <attribute name="created" value="VXRlbnRlO0RFU0tUT1AtMU5GMkYwUTsyMDI0LTAzLTA5OyIxMDowNDo0OSAiOzI4NTE="/>
+        <attribute name="edited" value="VXRlbnRlO0RFU0tUT1AtMU5GMkYwUTsyMDI0LTAzLTA5OyIxMDoxMDo1MCAiOzE7Mjk0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="voto" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserire il Voto: &quot;" newline="True"/>
+            <input variable="voto"/>
+            <if expression="voto &lt; 18">
+                <then>
+                    <output expression="&quot;Insufficiente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="voto == 18">
+                        <then>
+                            <output expression="&quot;Appena Sufficiente&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="voto &gt;= 19 &amp;&amp; voto &lt;= 20">
+                                <then>
+                                    <output expression="&quot;Basso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="voto &gt;= 21 &amp;&amp; voto &lt;= 23">
+                                        <then>
+                                            <output expression="&quot;Medio&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="voto &gt;= 24 &amp;&amp; voto &lt;= 26">
+                                                <then>
+                                                    <output expression="&quot;Buono&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="voto &gt;= 27 &amp;&amp; voto &lt;= 29">
+                                                        <then>
+                                                            <output expression="&quot;Alto&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="voto == 30">
+                                                                <then>
+                                                                    <output expression="&quot;Massimo!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Impossibile&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="luca.negriolli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 06:34:52 "/>
+        <attribute name="created" value="bHVjYS5uZWdyaW9sbGk7QVVMQTc1LVBDMTI7MjAyNC0wMy0wNDsiMDM6NTU6NTcgIjszMzE3"/>
+        <attribute name="edited" value="bHVjYS5uZWdyaW9sbGk7QVVMQTc1LVBDMTI7MjAyNC0wMy0wNDsiMDQ6MTc6MTMgIjsxOzM0MTY="/>
+        <attribute name="edited" value="TWFkZSBJbiBIZWF2ZW47REVTS1RPUC04U0ZHVlJUOzIwMjQtMDMtMTA7IjA2OjM0OjUyICI7MTszNjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserire 3 numeri&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <if expression="n1 &gt; n2 &amp;&amp; n1&gt;n3">
+                <then>
+                    <if expression="n2 &gt; n3">
+                        <then>
+                            <output expression="n1" newline="True"/>
+                            <output expression="n2" newline="True"/>
+                            <output expression="n3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="n1" newline="True"/>
+                            <output expression="n3" newline="True"/>
+                            <output expression="n2" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="n2 &gt; n3 &amp;&amp; n2&gt;n1">
+                        <then>
+                            <if expression="n1 &gt; n3">
+                                <then>
+                                    <output expression="n2" newline="True"/>
+                                    <output expression="n1" newline="True"/>
+                                    <output expression="n3" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="n2" newline="True"/>
+                                    <output expression="n3" newline="True"/>
+                                    <output expression="n1" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="n3&gt;n1 &amp;&amp; n3&gt;n2">
+                                <then>
+                                    <if expression="n1&gt;n2">
+                                        <then>
+                                            <output expression="n3" newline="True"/>
+                                            <output expression="n1" newline="True"/>
+                                            <output expression="n2" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="n3" newline="True"/>
+                                            <output expression="n2" newline="True"/>
+                                            <output expression="n1" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
