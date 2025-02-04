@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="luca.tamanini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 04:00:34 "/>
+        <attribute name="created" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwODsyMDI0LTAyLTI2OyIwMzo0OTozNSAiOzMyMDg="/>
+        <attribute name="edited" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwODsyMDI0LTAyLTI2OyIwNDowMDozNCAiOzE7MzMwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, tot, i" type="Real" array="False" size=""/>
+            <assign variable="tot" expression="0"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="&quot;inserisci il guadagno: &quot;" newline="True"/>
+                <input variable="a"/>
+                <assign variable="tot" expression="tot+a"/>
+            </for>
+            <output expression="&quot;il guadagno totale e': &quot;" newline="True"/>
+            <output expression="tot" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

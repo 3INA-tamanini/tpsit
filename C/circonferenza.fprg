@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="denni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-03 04:13:56 "/>
+        <attribute name="created" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjMyOjA1ICI7Mjc0Ng=="/>
+        <attribute name="edited" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjQxOjAwICI7MjsyODUw"/>
+        <attribute name="edited" value="TWFkZSBJbiBIZWF2ZW47REVTS1RPUC04U0ZHVlJUOzIwMjQtMDMtMDM7IjA0OjEzOjU2ICI7MTszNjMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calcolare la circonferenza sapendo il raggio"/>
+            <declare name="raggio, circonferenza" type="Real" array="False" size=""/>
+            <assign variable="raggio" expression="0"/>
+            <assign variable="circonferenza" expression="0"/>
+            <output expression="&quot;Inserire il raggio del cerchio: &quot;" newline="True"/>
+            <input variable="raggio"/>
+            <assign variable="circonferenza" expression="raggio*2*3.14"/>
+            <output expression="&quot;La circonferenza &#232;: &quot; &amp;circonferenza" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

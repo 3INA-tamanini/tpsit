@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="denni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-03 04:18:29 "/>
+        <attribute name="created" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjExOjUxICI7Mjc0NA=="/>
+        <attribute name="edited" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjI1OjM4ICI7MzsyODY0"/>
+        <attribute name="edited" value="TWFkZSBJbiBIZWF2ZW47REVTS1RPUC04U0ZHVlJUOzIwMjQtMDMtMDM7IjA0OjE4OjI5ICI7MzszNjM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Dati due numeri inseriti voglio verificare che almeno uno dei due sia compreso tra 5 e 10&#13;&#10;"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;inserisci un numero: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;inserisci un numero: &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;5 &amp;&amp; a&lt;10">
+                <then>
+                    <output expression="a&amp; &quot; &#232; compreso tra 5 e 10&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="b&gt;5 &amp;&amp; b&lt;10">
+                <then>
+                    <output expression="b&amp; &quot; &#232; compreso tra 5 e 10&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

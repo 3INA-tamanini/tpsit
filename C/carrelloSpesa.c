@@ -7,7 +7,7 @@ typedef struct carrelloSpesa
     char nome[100];
     int prezzo;
     int quantita;
-    struct carrelloSpesa *next;
+    struct nodo *next;
 } nodo;
 
 nodo *inserimentoPrimoElemento()

@@ -1,0 +1,17 @@
+< THE SYMBOL TABLE >  noname.exe_  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+VETT                     	00000     	2         	VAR       	data      
+MIN                      	00014     	2         	VAR       	data      
+PKEY                     	00016     	1         	VAR       	data      
+STACK                    	00003     	-5        	SEGMENT   	(ITSELF)  
+CODE                     	00013     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+CICLO                    	00015     	-1        	LABEL     	code      
+SCAN                     	0001B     	-1        	LABEL     	code      
+===================================================================================================
+[ 19/02/2024  --  16:06:31 ] 
+< END >
+ 

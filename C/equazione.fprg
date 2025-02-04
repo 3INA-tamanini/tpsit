@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="denni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:11:10 "/>
+        <attribute name="created" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA4OjU5OjE3ICI7Mjc1Nw=="/>
+        <attribute name="edited" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjExOjEwICI7MTsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calcolare la soluzione dell&#8217;equazione AX+B=0"/>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="x" expression="0"/>
+            <output expression="&quot;Inserire il valore di a: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserire il valore di b: &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="x" expression="-b/a"/>
+            <output expression="&quot;Il valore di x &#232;: &quot;&amp;x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

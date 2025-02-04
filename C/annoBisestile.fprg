@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="luca.tamanini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:53:08 "/>
+        <attribute name="created" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwOTsyMDI0LTAzLTA0OyIwMzo0OTowNyAiOzMyMDU="/>
+        <attribute name="edited" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwOTsyMDI0LTAzLTA0OyIwMzo1MzowOCAiOzE7MzMwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Float" array="False" size=""/>
+            <output expression="&quot;inserisci l'anno&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a%400==0 || (a%4==0&amp;&amp;a%100!=0)">
+                <then>
+                    <output expression="&quot;l'anno &#232; bisestile&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;l'anno non &#232; bisestile&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

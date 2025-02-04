@@ -1,0 +1,144 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+pariDispari.exe_ -- emu8086 assembler version: 4.08  
+ 
+[ 29/01/2024  --  16:01:10 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       ; multi-segment executable file template.
+[   2]        :                                       
+[   3]        :                                       data segment
+[   4]        :                                       ; add your data here!
+[   5]    0000: 07 00                                 numero      dw 7h
+[   6]    0002: 02                                    dividitore  db 02h
+[   7]    0003: 70 61 72 69 24                        messpari    db "pari$"
+[   8]    0008: 64 69 73 70 61 72 69 24               messdispari db "dispari$"
+[   9]        :                                       ends
+[  10]        :                                       
+[  11]        :                                       stack segment
+[  12]    0010: 00 00 00 00 00 00 00 00 00 00 00 00   dw   128  dup(0)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00                         
+[  13]        :                                       ends
+[  14]        :                                       
+[  15]        :                                       code segment
+[  16]    0110:                                       start:
+[  17]        :                                       ; set segment registers:
+[  18]    0110: B8 00 00                              mov ax, @data
+[  19]    0113: 8E D8                                 mov ds, ax
+[  20]    0115: 8E C0                                 mov es, ax
+[  21]        :                                       
+[  22]        :                                       ; add your code here
+[  23]        :                                       
+[  24]    0117: A1 00 00                              mov ax,numero
+[  25]    011A: F6 36 02 00                           div dividitore
+[  26]        :                                       
+[  27]    011E: 80 FC 00                              cmp ah, 0
+[  28]        :                                       
+[  29]    0121: 74 02                                 je pari
+[  30]    0123: EB 09                                 jmp dispari
+[  31]        :                                       
+[  32]        :                                       
+[  33]        :                                       
+[  34]    0125:                                       pari:
+[  35]    0125: BA 03 00                              lea dx, messpari
+[  36]    0128: B4 09                                 mov ah,9
+[  37]    012A: CD 21                                 int 21h
+[  38]    012C: EB 0B                                 jmp fine
+[  39]        :                                       
+[  40]        :                                       
+[  41]    012E:                                       dispari:
+[  42]    012E: BA 08 00                              lea dx, messdispari
+[  43]    0131: B4 09                                 mov ah,9
+[  44]    0133: CD 21                                 int 21h
+[  45]        :                                       
+[  46]        :                                       
+[  47]        :                                       
+[  48]        :                                       
+[  49]        :                                       
+[  50]        :                                       ; output string at ds:dx
+[  51]        :                                       
+[  52]        :                                       ; wait for any key....
+[  53]        :                                       
+[  54]        :                                       
+[  55]    0135: B4 01                                 mov ah, 1
+[  56]    0137: CD 21                                 int 21h
+[  57]        :                                       
+[  58]        :                                       
+[  59]    0139:                                       fine:
+[  60]        :                                       
+[  61]    0139: B8 00 4C                              mov ax, 4c00h ; exit to operating system.
+[  62]    013C: CD 21                                 int 21h
+[  63]        :                                       ends
+[  64]        :                                       
+[  65]        :                                       end start ; set entry point and stop the assembler.
+[  66]        :                                       
+[  67]        :                                       
+[  68]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 3E      -   bytes on last page (l.byte)
+0003: 01      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 01      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 01      -   SP - stack pointer (h.byte)
+0012: 86      -   check sum (l.byte)
+0013: B7      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 11      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 01      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 11      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

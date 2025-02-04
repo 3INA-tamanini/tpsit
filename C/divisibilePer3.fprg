@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="denni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:31:26 "/>
+        <attribute name="created" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjI1OjU2ICI7Mjc1NA=="/>
+        <attribute name="edited" value="ZGVubmk7REVTS1RPUC02SDFKODdVOzIwMjQtMDItMjY7IjA5OjMxOjI2ICI7MzsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Dire se un numero &#232; divisibile per tre. Utilizzare l&#8217;operatore % che calcola il resto della divisione tra due numeri"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <output expression="&quot;Inserire un numero: &quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num%3 == 0">
+                <then>
+                    <output expression="&quot;Il numero &quot; &amp;num &amp;&quot; &#233; divisibile per tre&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero &quot; &amp;num &amp;&quot; non &#233; divisibile per tre&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

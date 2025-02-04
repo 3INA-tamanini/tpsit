@@ -1,0 +1,19 @@
+< THE SYMBOL TABLE >  pariDispari.exe_  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+NUMERO                   	00000     	2         	VAR       	data      
+DIVIDITORE               	00002     	1         	VAR       	data      
+MESSPARI                 	00003     	1         	VAR       	data      
+MESSDISPARI              	00008     	1         	VAR       	data      
+STACK                    	00001     	-5        	SEGMENT   	(ITSELF)  
+CODE                     	00011     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+PARI                     	00015     	-1        	LABEL     	code      
+DISPARI                  	0001E     	-1        	LABEL     	code      
+FINE                     	00029     	-1        	LABEL     	code      
+===================================================================================================
+[ 29/01/2024  --  16:01:10 ] 
+< END >
+ 

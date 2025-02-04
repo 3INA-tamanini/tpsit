@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="luca.tamanini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 03:48:52 "/>
+        <attribute name="created" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwODsyMDI0LTAyLTI2OyIwMzoyMjowNSAiOzMxOTY="/>
+        <attribute name="edited" value="bHVjYS50YW1hbmluaTtBVUxBNzUtUEMwODsyMDI0LTAyLTI2OyIwMzo0ODo1MiAiOzE7MzMxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, num, media, i" type="Real" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;inserisci un numero: &quot;" newline="True"/>
+                <input variable="a"/>
+                <assign variable="num" expression="num+a"/>
+            </for>
+            <assign variable="media" expression="num/i"/>
+            <output expression="&quot;la media &#232;: &quot;" newline="True"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
