@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "corsaCiclistiTest",
+            "request": "launch",
+            "mainClass": "corsaCiclistiTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Gara2Test",
+            "request": "launch",
+            "mainClass": "Gara2Test",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Es1SleepJoin",
+            "request": "launch",
+            "mainClass": "Es1SleepJoin",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "IsAlive",
             "request": "launch",
             "mainClass": "IsAlive",
