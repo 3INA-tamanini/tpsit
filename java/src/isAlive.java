@@ -1,11 +1,34 @@
-public class isAlive extends Thread{
+public class IsAlive extends Thread {
+    private int pausa;
+
+    public IsAlive(int pausa) {
+        this.pausa = pausa;
+    }
 
     @Override
     public void run() {
         try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread.sleep(pausa);
+        } catch (InterruptedException ex) {
+            System.out.println("Interrotto durante lo sleep.");
+            ex.printStackTrace();
         }
     }
+
+    public static void main(String[] args) {
+        IsAlive thread1 = new IsAlive(3000);
+        try {
+            thread1.start();
+            while (thread1.isAlive()) {
+                System.out.println("Thread in esecuzione");
+                sleep(1000);
+            }
+            thread1.join();
+            System.out.println("Thread terminato");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+    }
+
 }

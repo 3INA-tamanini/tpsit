@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsAlive",
+            "request": "launch",
+            "mainClass": "IsAlive",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Gara",
+            "request": "launch",
+            "mainClass": "Gara",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "gara",
+            "request": "launch",
+            "mainClass": "gara",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "es1SleepJoin",
             "request": "launch",
             "mainClass": "es1SleepJoin",

@@ -1,7 +1,7 @@
-public class es1SleepJoin extends Thread {
+public class Es1SleepJoin extends Thread {
     private String nome;
     private int pausa;
-    public es1SleepJoin(String nome, int pausa){
+    public Es1SleepJoin(String nome, int pausa){
         this.nome = nome;
         this.pausa = pausa;
     }
@@ -18,8 +18,8 @@ public class es1SleepJoin extends Thread {
     }
 
     public static void main(String[] args) {
-        es1SleepJoin t1 = new es1SleepJoin("Thread 1", 2000);
-        es1SleepJoin t2 = new es1SleepJoin("Thread 2", 1000);
+        Es1SleepJoin t1 = new Es1SleepJoin("Thread 1", 2000);
+        Es1SleepJoin t2 = new Es1SleepJoin("Thread 2", 1000);
 
         t1.start();
         t2.start();
