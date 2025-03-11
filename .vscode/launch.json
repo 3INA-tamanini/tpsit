@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DownloadManager",
+            "request": "launch",
+            "mainClass": "DownloadManager",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "StampaAlternata",
+            "request": "launch",
+            "mainClass": "StampaAlternata",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Orologio",
+            "request": "launch",
+            "mainClass": "Orologio",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "myRunnableExtends",
+            "request": "launch",
+            "mainClass": "myRunnableExtends",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "MyRunnableTest",
+            "request": "launch",
+            "mainClass": "MyRunnableTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "MyRunnable",
+            "request": "launch",
+            "mainClass": "MyRunnable",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "Campana",
+            "request": "launch",
+            "mainClass": "Campana",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "corsaCiclistiTest",
             "request": "launch",
             "mainClass": "corsaCiclistiTest",
