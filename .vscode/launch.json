@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CampaneAsincrone",
+            "request": "launch",
+            "mainClass": "CampaneAsincrone",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "CorsaBimbi",
+            "request": "launch",
+            "mainClass": "CorsaBimbi",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "DownloadManager",
             "request": "launch",
             "mainClass": "DownloadManager",
