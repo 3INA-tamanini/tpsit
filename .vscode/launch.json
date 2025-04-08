@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DistributoreMain",
+            "request": "launch",
+            "mainClass": "distributoreDiBenzina.DistributoreMain",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "BufferMain",
+            "request": "launch",
+            "mainClass": "BufferMain",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "CampaneAsincrone",
             "request": "launch",
             "mainClass": "CampaneAsincrone",
