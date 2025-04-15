@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "H2oTest",
+            "request": "launch",
+            "mainClass": "H2O.H2oTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "H2o",
+            "request": "launch",
+            "mainClass": "H2O.H2o",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "LettoriScrittoriTest",
+            "request": "launch",
+            "mainClass": "lettoriScrittori.LettoriScrittoriTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "DistributoreMain",
             "request": "launch",
             "mainClass": "distributoreDiBenzina.DistributoreMain",
