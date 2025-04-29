@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GoKart",
+            "request": "launch",
+            "mainClass": "goKart.GoKart",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
+            "name": "BarbiereTest",
+            "request": "launch",
+            "mainClass": "barbiere.BarbiereTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "H2oTest",
             "request": "launch",
             "mainClass": "H2O.H2oTest",
