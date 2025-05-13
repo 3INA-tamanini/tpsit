@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PiscinaTest",
+            "request": "launch",
+            "mainClass": "piscina.PiscinaTest",
+            "projectName": "tpsit_cb66a809"
+        },
+        {
+            "type": "java",
             "name": "GoKart",
             "request": "launch",
             "mainClass": "goKart.GoKart",
