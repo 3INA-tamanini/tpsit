@@ -1,7 +1,5 @@
 package Prj_stampaNumeri;
 
-import distributoreDiBenzina.Automobile1;
-
 public class ThreadRunnableMain {
 
     public static void main(String[] args) {
@@ -14,7 +12,6 @@ public class ThreadRunnableMain {
         
         
         uno.start();
-        
         due.start();
         tre.start();
         quattro.start();

@@ -20,6 +20,7 @@ public class PariThread extends Thread {
                     lock.notify();
                     lock.wait();
                 }
+                
 
             } catch (Exception e) {
             }
