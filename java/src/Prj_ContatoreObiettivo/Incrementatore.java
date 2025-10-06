@@ -15,16 +15,11 @@ public class Incrementatore implements Runnable { //classe Incrementatore per in
     public void run() { //metodo run
         try {
             //incrementa 5 volte con 200 ms di tempo da un incremento all'altro
-            c.incrementa();
-            Thread.sleep(200);
-            c.incrementa();
-            Thread.sleep(200);
-            c.incrementa();
-            Thread.sleep(200);
-            c.incrementa();
-            Thread.sleep(200);
-            c.incrementa();
-            Thread.sleep(200);
+            for (int i = 0; i < 5; i++) {
+                c.incrementa();
+                Thread.sleep(200);
+                
+            }
         } catch (InterruptedException ex) {
         }
 
